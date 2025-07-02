@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 
 export const metadata = {
   title: "Concesionaria",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main>{children}</main>
+        <Footer/>
       </body>
     </html>
   );
