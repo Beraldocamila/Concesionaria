@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     padding: 1rem 2rem;
     background-color: #23414d;
-    /* Azul oscuro */
     color: #ffffff;
 }
 
@@ -21,7 +20,7 @@
     object-fit: contain;
 }
 
-/* Navegación principal */
+/* Principal Nav */
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -42,7 +41,6 @@
     bottom: -3px;
     left: 0;
     background-color: #ffffff;
-    /* Naranja quemado */
     transition: width 0.3s ease;
 }
 
@@ -50,26 +48,64 @@
     width: 100%;
 }
 
-/* Login / Registro */
-.nav-account {
+/* Search / Login / Register */
+.nav-right {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
 }
 
-.login-btn,
-.register-btn {
-  color: #ffffff;                 /* Texto blanco */
-  background-color: transparent; /* Fondo transparente */
-  border: 1px solid #41D8C4;     /* Borde turquesa */
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* espacio entre input y botón */
 }
 
-.login-btn:hover,
-.register-btn:hover {
-  background-color: #41D8C4;     /* Fondo turquesa */
-  color: #111827;                /* Texto oscuro al hacer hover */
+/* Search Input */
+.nav-search input {
+    padding: 0.4rem 0.8rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #111827;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Search Button */
+.nav-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    transition: color 0.3s ease;
+}
+
+.nav-search button:hover {
+    color: #3B82F6;
+}
+
+/* User */
+.icon-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-user:hover {
+    background-color: #3B82F6;
+    color: #ffffff;
 }
