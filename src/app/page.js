@@ -1,9 +1,8 @@
 import Image from "next/image";
+import Homepage from "./homepage/Homepage";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Proyecto Concesionaria</h2>
-    </div>
+    <Homepage />
   );
 }

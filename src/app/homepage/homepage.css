@@ -1,0 +1,107 @@
+.homepage-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('/img/imagen-auto.jpg') no-repeat center/cover;
+    color: #ffffff;
+    border-radius: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.homepage-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.homepage-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.25rem;
+    user-select: none;
+    letter-spacing: 0.06rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background: #3b82f6;
+    margin: 0 auto 2rem auto;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.homepage-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #d1d5db;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+.list {
+    list-style: none;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    color: #f3f4f6;
+}
+
+.list li {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    color: #3b82f6;
+    font-size: 1.3rem;
+    user-select: none;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8));
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 3rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    box-shadow: 0 7px 20px rgba(37, 99, 235, 0.9);
+}
+
+.contact {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #cbd5e1;
+}
+
+.contact a {
+    color: #90caf9;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
